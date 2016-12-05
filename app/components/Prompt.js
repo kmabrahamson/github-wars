@@ -1,10 +1,10 @@
-var React = require('react');
-var transparentBg = require('../styles').transparentBg;
+import React from 'react';
+import styles from '../styles';
 
 //stateless component
 function Prompt(props) {
   return (
-    <div className="jumbotron col-sm-6 col-sm-offset-3 text-center" style={transparentBg}>
+    <div className="jumbotron col-sm-6 col-sm-offset-3 text-center" style={styles.transparentBg}>
       <h1>{props.header}</h1>
       <div className="col-sm-12">
         <form onSubmit={props.onSubmitUser}>
@@ -34,4 +34,4 @@ Prompt.PropTypes = {
   username: React.PropTypes.string.isRequired
 }
 
-module.exports = Prompt;
+export default Prompt;

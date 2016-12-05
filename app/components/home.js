@@ -1,12 +1,11 @@
-var React = require('react');
-var transparentBg = require('../styles').transparentBg;
-var ReactRouter = require('react-router')
-var Link = ReactRouter.Link
+import React from 'react';
+import styles from '../styles';
+import { Link } from 'react-router';
 
 class Home extends React.Component {
   render() {
     return (
-      <div className="jumbotron col-sm-12 text-center" style={transparentBg}>
+      <div className="jumbotron col-sm-12 text-center" style={styles.transparentBg}>
         <h1>Github Wars</h1>
         <p className="lead">Placeholder text</p>
         <Link to="/playerOne">
@@ -17,4 +16,4 @@ class Home extends React.Component {
   }
 }
 
-module.exports = Home;
+export default Home;

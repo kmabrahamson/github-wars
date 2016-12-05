@@ -1,5 +1,5 @@
-var React = require('react');
-var Prompt = require('../components/Prompt');
+import React from 'react';
+import Prompt from '../components/Prompt';
 
 class PromptContainer extends React.Component {
   //es6 for setInitialState
@@ -46,4 +46,4 @@ PromptContainer.contextTypes = {
   router: React.PropTypes.object.isRequired
 }
 
-module.exports = PromptContainer;
+export default PromptContainer;
